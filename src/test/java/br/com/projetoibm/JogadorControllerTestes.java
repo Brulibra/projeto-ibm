@@ -19,21 +19,21 @@ public class JogadorControllerTestes {
   @Autowired
   MockMvc mockMvc;
 
-//  @Test
-//  public void voidTestConsultaStatusServidorPost() throws Exception {
-//    JogadorEntity jogador = new JogadorEntity();
-//    jogador.setJogadorNome("João");
-////    jogador.setJogadorTime("Cogumelo");
-//    Gson gson = new Gson();
-//
-//    MvcResult resultado = mockMvc.perform((MockMvcRequestBuilders.post("/times/jogador")
-//            .contentType(MediaType.APPLICATION_JSON)
-//            .content(gson.toJson(jogador))))
-//            .andExpect(MockMvcResultMatchers.status().isOk()).andReturn();
-//
-//    String textoResposta = resultado.getResponse().getContentAsString();
-//    String textComparação = "Jogador cadastrado com sucesso";
-//
-//    assert (textComparação.equals(textoResposta));  }
+  @Test
+  public void voidTestConsultaStatusServidorPost() throws Exception {
+    JogadorEntity jogador = new JogadorEntity();
+    jogador.setJogadorNome("João");
+    jogador.setJogadorTime("Cogumelo");
+    Gson gson = new Gson();
+
+    MvcResult resultado = mockMvc.perform((MockMvcRequestBuilders.post("/times/jogador")
+            .contentType(MediaType.APPLICATION_JSON)
+            .content(gson.toJson(jogador))))
+            .andExpect(MockMvcResultMatchers.status().isOk()).andReturn();
+
+    String textoResposta = resultado.getResponse().getContentAsString();
+    String textComparação = "Jogador cadastrado com sucesso";
+
+    assert (textComparação.equals(textoResposta));  }
 
 }
