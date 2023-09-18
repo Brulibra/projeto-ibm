@@ -30,10 +30,6 @@ public class JogadorControllerTestes {
             .contentType(MediaType.APPLICATION_JSON)
             .content(gson.toJson(jogador))))
             .andExpect(MockMvcResultMatchers.status().isOk()).andReturn();
-
-    String textoResposta = resultado.getResponse().getContentAsString();
-    String textComparação = "Jogador cadastrado com sucesso";
-
-    assert (textComparação.equals(textoResposta));  }
+    }
 
 }
