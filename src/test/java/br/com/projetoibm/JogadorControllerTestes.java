@@ -26,7 +26,7 @@ public class JogadorControllerTestes {
     jogador.setJogadorTime("Cogumelo");
     Gson gson = new Gson();
 
-    MvcResult resultado = mockMvc.perform((MockMvcRequestBuilders.post("/times/jogador")
+    mockMvc.perform((MockMvcRequestBuilders.post("/times/jogador")
             .contentType(MediaType.APPLICATION_JSON)
             .content(gson.toJson(jogador))))
             .andExpect(MockMvcResultMatchers.status().isOk()).andReturn();
