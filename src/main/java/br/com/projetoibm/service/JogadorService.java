@@ -20,7 +20,7 @@ JogadorRepository jogadorRepository;
   }
   public List<String> addNovoJogador(JogadorEntity jogador) {
 
-    List<String> umJogador = List.of(jogador.getJogadorTime());
+    List<String> umJogador = List.of(jogador.getJogadorNome());
 
       jogadorRepository.save(jogador);
       return addNovoJogador(umJogador);
