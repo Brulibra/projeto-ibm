@@ -23,7 +23,7 @@ public class JogadorControllerTestes {
   public void voidTestConsultaStatusServidorPost() throws Exception {
     JogadorEntity jogador = new JogadorEntity();
     jogador.setJogadorNome("João Pedro");
-    jogador.setJogadorTime("Cogumelo");
+
     Gson gson = new Gson();
 
     mockMvc.perform((MockMvcRequestBuilders.post("/times/jogador")
