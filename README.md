@@ -45,9 +45,9 @@ Retorno esperado: 2xx OK com body vazio
 ## Próximos Passos
 
 - Corrigir endpoint `GET`
-    - **Sempre que um jogador é inserido no *database* um novo time é gerado**
+    - `Problema Encontrado:`**Sempre que um jogador é inserido no *database* um novo time é gerado**
     - `Solução:` Varrer o banco de dos existente antes de salvar Jogador
-    - `Problema Encontrado:` Tipo de dados
+    - `Motivo:` Tipagem de dados
     - `Possíveis soluções:` Querry, ManyToMany, buscar por nome do time
 - Adicionar validações no backend
     - Usuário digitou apenas nome
