@@ -30,10 +30,10 @@ Retorno esperado: 2xx OK com body vazio
 
 **Requisitos:**
 
-- [x]  Esvaziar a base de dados ao chamar DELETE
-- [x]  POST incluí jogadores de um em um
+- [x]  Esvaziar a base de dados ao chamar `DELETE`
+- [x]  `POST` incluí jogadores de um em um
 - [x]  A Aplicação deve subir sem nenhuma dependência externa
-- [ ]  GET traz os times até o momento com jogadores já recebidos
+- [ ]  `GET` traz os times até o momento com jogadores já recebidos
 
 **Desejáveis:**
 
@@ -44,8 +44,16 @@ Retorno esperado: 2xx OK com body vazio
 
 ## Próximos Passos
 
-- Corrigir endpoint GET
+- Corrigir endpoint `GET`
+    - **Sempre que um jogador é inserido no *database* um novo time é gerado**
+    - `Solução:` Varrer o banco de dos existente antes de salvar Jogador
+    - `Problema Encontrado:` Tipo de dados
+    - `Possíveis soluções:` Querry, ManyToMany, buscar por nome do time
 - Adicionar validações no backend
+    - Usuário digitou apenas nome
+    - Usuário digitou números
+    - Jogador tem mais de um sobrenome
+    - Mais de dois jogadores com sobrenome iguais
 - Finalizar testes backend
 - Hospedar em serviço de cloud
 - Fazer frontend
