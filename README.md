@@ -1,6 +1,7 @@
 # Projeto IBM
 
 ## Projeto desenvolvido como parte da entrega final do Bootcamp IBM, realizado entre 11 e 16 de Setembro de 2023.
+[Confira o certificado de participação no curso](https://drive.google.com/file/d/1vlVtw2wyDXW5b-dpS-1tT2T_eYZ_ccyN/view?usp=drive_link)
 
 ---
 
